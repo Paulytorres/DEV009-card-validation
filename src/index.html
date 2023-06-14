@@ -2,13 +2,115 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Bunny Reader </title>
     <link rel="stylesheet" href="style.css" />
+    <!-- desde aqui google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- hasta aqui google fonts-->
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="topheader"> 
+      <nav class="topnav">
+          <div class="logo-container">
+              <img class="logo" src="img/minilogo.JPG" alt="Logo Bunny Reader" width="50" height="50">
+              <div class="logotype">&lt; Manga Bunny Reader &gt;</div>
+          </div>
+          <ul class="menu">
+              <li><a href="index.html" class="selected">Home</a></li>
+              <li><a href="#aboutUs">¿Quiénes Somos?</a></li>
+              <li><a href="#plans">Nuestros Planes</a></li>
+              <li><a href="#subscription">Suscripción</a></li>
+              <li><a href="#socialNetworks">Redes Sociales</a></li>
+          </ul>
+      </nav>
+  </header>
+    <main>
+      <div class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
+          <div class="aboutUs-info"></div>
+            <h1 class="titule">Bienvenidos a Manga Bunny Reader</h1>
+            <h2>Tu pasión por el manga a un paso de tu puerta.</h2>
+            <h1 class="titule">¿Quiénes Somos?</h1>
+              <p class="aboutUs-details">"Manga Bunny Reader" es una empresa de suscripción de manga que ayuda a los amantes del manga a completar su colección sin exceder su presupuesto. Los planes son flexibles, con envío directo y una experiencia sin igual.</p>
+              <p> ¡Únete y descubre un mundo de mangas emocionante en "Manga Bunny Reader"!</p>
+        </section>
+      </div>
+
+      <div class="plans">
+        <section class="plans">
+          <h1 class="titule">Nuestros Planes Disponibles</h1>
+          <h3>Completa tu colección sin salirte de tu presupuesto</h3><br>
+          <h4>Elige la opción que prefieras</h4><br>
+          <div class="plans-info">
+          <img src="img/minibunny.JPG" alt="Plan MiniBunny" width="400" height="400">
+          <img src="img/bunnyreader.JPG" alt="Plan BunnyReader" width="400" height="400">
+          <img src="img/bunnyfan.jpeg" alt="Plan BunnyFan" width="400" height="400">
+          </div>
+        </section>
+      </div>
+      <!--formulario tipo modal-->
+        <div>
+            <section class="subscription">
+              <h1>Completa tu formulario</h1>
+              <button id="openModal">¡Suscríbete!</button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img class="logoMbR" src="img/minilogo.JPG" alt="LogoMbR" width="80" height="80">
+                  <form action="formCard" class="subscription" id="subscription">
+                    <div class="grupo">
+                      <label>Elige tu plan</label><br>
+                      <select name="select-subs">
+                        <option class="option" value="value1">Plan Mini Bunny: 1 manga</option>
+                        <option class="option" value="value2" selected>Plan Bunny Reader: 3 Mangas</option>
+                        <option class="option" value="value3">Plan Bunny Fan: 5 Mangas</option>
+                      </select>
+                    </div>
+                    <p>Ingresa tus datos de tarjeta</p>
+                    <div class="grupo">
+                      <label for="for_inputNumero">Número Tarjeta</label>
+                      <input class="boxText" type="text" id="inputNumero" for="maskedResult" placeholder="0000 0000 0000 0000" autocomplete="off" >
+                      <span id="isvalid">hola</span>
+                    </div>
+                    <div class="grupo">
+                      <label for="inputNombre">Nombre</label>
+                      <input class="boxText" type="text" id="inputNombre" placeholder="Nombre Apellido" autocomplete="off">
+                    </div>
+                    <div class="grupo">
+                      <div class="grupo expira">
+                        <label>Expiración</label>
+                        <input class="boxText" type="text" placeholder="Mes" maxlength="2" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                        <input class="boxText" type="text" placeholder="Año" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                      </div>
+                      <div class="grupo">
+                        <label for="inputCCV">CCV</label>
+                        <input class="boxText" type="text" id="inputCCV" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                      </div>
+                    </div>
+                    <button type="button" id="validaTC" class="btnSend">Suscribir</button>
+                  </form>
+                </div>
+                <br><br>
+              </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+      <section class="socialNetworks" id="socialNetworks">
+        <br>
+      <p>&copy; 2023 Manga Bunny Reader. Todos los derechos reservados.</p>
+      <div>
+        <p>Síguenos en Instagram</p><br>
+        <a href="https://www.instagram.com/bunnylector">
+          <img src="img/instagram-icon-free-png.webp" alt="Síguenos en Instagram" width="30" height="30">
+        </a>
+        <p> Realizado por Paulina Torres</p>
+        <br><br>
+      </div>
+      </section>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

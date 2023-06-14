@@ -1,0 +1,225 @@
+:root{
+--theme-color:#F9F5F6;
+--primary-color: #FFBDF7;
+--secundary-color: #FFAAC9;
+--text-color:black;
+--text-color-inverse:white;
+--navbar-shallow-color:#b7138c;
+} 
+
+body {
+background-color: var(--theme-color);
+/*google font*/
+font-family: 'Cherry Bomb One', cursive;
+font-family: 'Montserrat', sans-serif;
+padding-top:80px
+
+}
+
+/* Barra de Navegación */
+.topheader{
+  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  position:fixed;
+  background: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0% auto;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+/* imagen logo*/
+.logo{
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+  justify-content: space-between; 
+  border-radius: 50%;
+}
+
+/*menu*/
+.menu{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 16;
+  text-align: center;
+
+}
+.menu li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  border-right: 1px solid black;
+  padding: 0px 16px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.menu a:hover{
+background-color: #FFAAC9;
+color: #ea089f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+.titule{
+  color:var(--navbar-shallow-color)
+}
+
+/*Quienes somos*/
+.aboutUs{
+  color:var(--text-color);
+  font-size: x-large;
+  text-align: center;
+  padding: 500px,20px;
+}
+
+.aboutUs-details{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*text imagenes de los planes*/
+#plans{
+  text-align: center;
+  font-size: x-large;
+}
+
+/* imagenes */
+.plans-info{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.plans img {
+  max-width: 100%;
+}
+
+/*formulario */
+.subscription{
+  text-align: center;
+  font-size: large;
+}
+
+/*Boton index de "suscribete"*/
+#openModal{
+  background-color: #b7138c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+#openModal:hover {
+  background-color: #ea089f;
+}
+
+.logoMbR{
+  position: center;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(216, 12, 178, 0.423);
+}
+
+.modal-content {
+  background-color: #fae0e4;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius:30px;
+}
+
+
+
+.boxText{
+  background-color: #ffecef;
+  border-radius:8px;
+}
+
+.btnSend{
+  margin-top: 16px;
+  background-color: #b7138c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSend:hover{
+  background-color: #ea089f;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*seleccion de plan en el modal*/
+.grupo select[name="select-subs"] {
+  background-color: #ffecef; 
+  color:var(--text-color); 
+  border-radius:8px;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*footer*/
+.socialNetworks{
+  margin-top: 30px;
+  background-color: #b7138c;
+  color: white;
+  text-align: center;
+
+}
+
+
+
