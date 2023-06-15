@@ -36,7 +36,7 @@ Se definió el nombre del proyecto, "Manga Bunny Reader", y se asoció gradualme
 
 ![logo](src/img/LogoMBR.jpg)
 
-Después de escribir el código y darle una estructura y funcionalidad inicial, se realizaron varias modificaciones al diseño original. En lugar de utilizar múltiples ventanas para mostrar los diferentes formularios, se optó por utilizar una página principal y una ventana tipo modal. Esta elección favoreció la experiencia del usuario al reducir la carga cognitiva y mantener el enfoque en una sola pantalla.
+Después de escribir el código y darle una estructura y funcionalidad inicial, se realizaron varias modificaciones al diseño original. En lugar de utilizar múltiples ventanas para mostrar los diferentes formularios, se optó por utilizar una página principal y una ventana tipo modal. Esta elección favoreció la experiencia del usuario más amena.
 
 En cuanto a la funcionalidad de la página, se siguieron los siguientes pasos:
 
