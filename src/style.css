@@ -12,7 +12,7 @@ background-color: var(--theme-color);
 /*google font*/
 font-family: 'Cherry Bomb One', cursive;
 font-family: 'Montserrat', sans-serif;
-padding-top:80px
+padding-top:80px;
 
 }
 
@@ -81,7 +81,8 @@ section[id] {
 }
 
 .titule{
-  color:var(--navbar-shallow-color)
+  color:var(--navbar-shallow-color);
+  text-align: center;
 }
 
 /*Quienes somos*/
@@ -99,7 +100,7 @@ section[id] {
 }
 
 /*text imagenes de los planes*/
-#plans{
+.plans{
   text-align: center;
   font-size: x-large;
 }
