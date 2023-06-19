@@ -1,9 +1,9 @@
 import validator from './validator.js';
-
+//boton de suscripcion que despliega ventana modal en bloque 
 document.getElementById('openModal').addEventListener('click', function() {
   document.getElementById('myModal').style.display = 'block';
 });
-
+// click que al cerrar hace invisible el bloque de la ventana modal 
 document.getElementsByClassName('close')[0].addEventListener('click', function() {
   document.getElementById('myModal').style.display = 'none';
 });
@@ -17,7 +17,6 @@ document.getElementById('validaTC').addEventListener('click', function() {
     const maskedNumber =  validator.maskify(creditCardNumber);
     const formattedNumber = formatCardNumber(maskedNumber);
     document.getElementById('inputNumero').value = formattedNumber;
-    document.getElementById('myModal').style.display = 'none';
     alert("subcripcion realizada con exito ");
 
   }
