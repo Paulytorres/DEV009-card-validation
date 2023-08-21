@@ -80,8 +80,6 @@ Para utilizar este proyecto, sigue estos pasos:
 Esta es la interfaz final de la aplicación web Manga Bunny Reader:
 
 ![Interfaz Manga Bunny Reader](src/img/pagInicioMbR.png)
-
-<img src="./img/pagInicioMbR.png" alt="Interfaz Manga Bunny Reader" width="400px"/>
 ![Interfaz Manga Bunny Reader 2](src/img/pagInicioMbR2.png)
 ![Interfaz Manga Bunny Reader 3](src/img/pagInicioMbR3.png)
 
